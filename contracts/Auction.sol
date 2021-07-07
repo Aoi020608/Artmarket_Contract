@@ -114,7 +114,7 @@ contract Auction {
 
         (bool success, ) = existAuctionDetail.beneficiary.call{
             value: existAuctionDetail.highestBid
-        }("");
+        }("");  
         require(success, "Transfer failed");
         // beneficiary.transfer(highestBid);
     }
